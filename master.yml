@@ -5,6 +5,7 @@
       tag: "{{ Server_name }}"
     roles:
       - ec2-instance
+  - tasks:  
     debug:
       "{{ tag }}"  
 ...      
