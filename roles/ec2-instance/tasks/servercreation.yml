@@ -1,7 +1,7 @@
 ---
 - name:   launching AWS instance using Ansible
   ec2_instance_info:
-    
+    region: us-west-1
 
 ...    
 
