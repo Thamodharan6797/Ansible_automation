@@ -2,7 +2,7 @@
   - hosts: localhost
     gather_facts: false
     vars:
-      servername: "{{ server_name }}"
+      servername: demoserver
     #roles:
     #  - ec2-instance
     
