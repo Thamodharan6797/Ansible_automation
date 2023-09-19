@@ -5,5 +5,7 @@
       tag: "{{ Server_name }}"
     roles:
       - ec2-instance
+    debug:
+      "{{ tag }}"  
 ...      
   #- import_playbook: "{{ role }}.yml"
