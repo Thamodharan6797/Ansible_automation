@@ -1,6 +1,13 @@
 ---
-- name: Create EC2 instance
-  debug:
-    msg: "{{ aws_access_key }}"
+- name:   launching AWS instance using Ansible
+
+  ec2:
+     key_name: Windows_servers
+     region: us-west-1
+     instance_type: t2.micro
+     image: ami-04d1dcfb793f6fa37
+     instance_tags:
+       Name: Daemo_server
+
 ...
     
