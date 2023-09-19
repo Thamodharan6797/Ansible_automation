@@ -1,9 +1,6 @@
 ---
 - name: Create EC2 instance
-  ec2:
-    aws_access_key: '{{ aws_access_key }}'
-    aws_secret_key: '{{ aws_secret_key }}'
-    region: '{{ win_ec2_region }}'
-    instance_type: '{{ win_ec2_instance_type }}'
+  debug:
+    msg: "{{ aws_access_key }}"
 ...
     
