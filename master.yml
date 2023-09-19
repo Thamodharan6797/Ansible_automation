@@ -5,8 +5,9 @@
       tag: "{{ Server_name }}"
     roles:
       - ec2-instance
-  - tasks:  
-    debug:
-      "{{ tag }}"  
+    tasks:
+      - name = Check the value of server name 
+      debug:
+        "{{ tag }}"  
 ...      
   #- import_playbook: "{{ role }}.yml"
