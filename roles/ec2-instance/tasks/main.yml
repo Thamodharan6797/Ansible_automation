@@ -5,14 +5,5 @@
       aws_secret_key: '{{ aws_secret_key }}'
       region: '{{ win_ec2_region }}'
       instance_type: '{{ win_ec2_instance_type }}'
-      instance_tags:
-          Name: '{{win_ec2_name_prefix}}'
-      group: '{{ win_ec2_security_group }}'
-      image: '{{ item_id }}'
-      user_data: "{{ lookup('file', 'win_ec2_user_data') }}"
-      exact_count: "{{ machine_count }}"
-      count_tag:
-          Name: '{{win_ec2_name_prefix}}'
-      wait: yes
-    register: win_ec2
+...
     
