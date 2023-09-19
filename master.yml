@@ -1,0 +1,9 @@
+---
+  - hosts: localhost
+    gather_facts: true
+    vars:
+      tag: "{{ Server_name }}"
+    roles:
+      - ec2-instance
+...      
+  #- import_playbook: "{{ role }}.yml"
