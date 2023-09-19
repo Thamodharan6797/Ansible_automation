@@ -7,7 +7,7 @@
       - ec2-instance
     tasks:
       - name: Check the value of server name 
-      debug:
-        "{{ tag }}"  
+        debug:
+          "{{ tag }}" 
 ...      
   #- import_playbook: "{{ role }}.yml"
