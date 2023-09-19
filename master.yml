@@ -8,7 +8,8 @@
     
     tasks:
       - name: Check the value of server name 
-        debug: "{{ servername }}"
+        debug: 
+          msg: "{{ servername }}"
         
 ...      
   #- import_playbook: "{{ role }}.yml"
