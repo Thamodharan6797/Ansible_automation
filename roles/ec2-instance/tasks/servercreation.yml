@@ -1,7 +1,7 @@
 ---
 - name:   launching AWS instance using Ansible
-  win_shell: | 
-    write-host "Hai"
+  ec2_instance_info:
+    
 
 ...    
 
