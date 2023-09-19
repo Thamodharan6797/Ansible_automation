@@ -3,8 +3,9 @@
     gather_facts: false
     vars:
       tag: "{{ Server_name }}"
-    roles:
-      - ec2-instance
+    #roles:
+    #  - ec2-instance
+    
     tasks:
       - name: Check the value of server name 
         debug:
