@@ -2,13 +2,13 @@
   - hosts: localhost
     gather_facts: false
     vars:
-      tag: "{{ Server_name }}"
+      servername: "{{ server_name }}"
     #roles:
     #  - ec2-instance
     
     tasks:
       - name: Check the value of server name 
         debug:
-          "{{ tag }}" 
+          "{{ servername }}"
 ...      
   #- import_playbook: "{{ role }}.yml"
