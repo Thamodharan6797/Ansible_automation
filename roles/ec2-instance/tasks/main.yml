@@ -1,5 +1,6 @@
 ---
   - name: Check all variables
     debug:
-      msg: "{{aws_access_key}}" --- "{{ aws_secret_key }}"
+      msg: "{{aws_access_key}} --- {{ aws_secret_key }}"
+...
     
