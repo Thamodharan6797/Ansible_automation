@@ -1,13 +1,8 @@
 ---
 - name:   launching AWS instance using Ansible
+  win_shell: | 
+    write-host "Hai"
 
-  ec2:
-     key_name: Windows_servers
-     region: us-west-1
-     instance_type: t2.micro
-     image: ami-04d1dcfb793f6fa37
-     instance_tags:
-       Name: Daemo_server
+...    
 
-...
     
