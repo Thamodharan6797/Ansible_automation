@@ -6,7 +6,7 @@
     roles:
       - ec2-instance
     tasks:
-      - name = Check the value of server name 
+      - name: Check the value of server name 
       debug:
         "{{ tag }}"  
 ...      
