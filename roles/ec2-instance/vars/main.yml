@@ -1,12 +1,12 @@
 ---
-aws_access_key: # AWS Secret key
-aws_secret_key: # AWS Secret key id
-win_ec2_region: eu-west-1
-win_ec2_name_prefix: "{{ tag }}" # You don't need to change this line
+aws_access_key: AKIA3OEIBX4LOVWFHGQ3
+aws_secret_key: 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
+win_ec2_region: us-west-1
+win_ec2_name_prefix: "{{ servername }}" # You don't need to change this line
 win_user: Administrator # User name placed in ec2-instance user data.
-win_pass: # User pass placed in ec2-instance user data.
-win_ec2_security_group: # AWS Security Group Name
-item_id: ami-96b824ef # AWS Base windows AMI
+win_pass: Admin@12345#
+win_ec2_security_group: Windows_servers
+item_id: ami-0c6269b2ddb61bb2e
 win_ec2_instance_type: t2.micro # Instance Type
 machine_count: 1 # Exact Machine Count. Machines will be tagged as your role yml file name. If you give exact count 3 and if u have one, ansible will provision two more.
 ...
