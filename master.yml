@@ -1,8 +1,8 @@
 ---
   - hosts: localhost
     gather_facts: false
-    vars:
-      servername: "{{ server_name }}"
+    #vars:
+    #  servername: "{{ server_name }}"
     #roles:
     #  - ec2-instance
     
