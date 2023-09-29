@@ -3,13 +3,12 @@
     gather_facts: false
     vars:
       servername: "{{ server_name }}"
-    roles:
-      - ec2-instance
+    #roles:
+    #  - ec2-instance
     
     tasks:
-      - name: Check the value of server name 
-        debug: 
-          msg: "{{ servername }}"
+      - name: Gather information about all instances
+        amazon.aws.ec2_instance_info:
         
 ...      
   #- import_playbook: "{{ role }}.yml"
