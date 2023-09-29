@@ -1,14 +1,8 @@
 ---
-  - hosts: localhost
-    gather_facts: false
-    #vars:
-    #  servername: "{{ server_name }}"
-    #roles:
-    #  - ec2-instance
-    
-    tasks:
-      - name: Gather information about all instances
-        amazon.aws.ec2_instance_info:
-        
-...      
-  #- import_playbook: "{{ role }}.yml"
+- name: ping module demo
+  hosts: all
+  tasks:
+    - name: test connection
+      ansible.builtin.ping:
+
+...
