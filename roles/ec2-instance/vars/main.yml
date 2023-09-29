@@ -1,6 +1,6 @@
 ---
 aws_access_key: AKIA3OEIBX4LOVWFHGQ3
-aws_secret_key: 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
+aws_secret_key: 
 win_ec2_region: us-west-1
 win_ec2_name_prefix: "{{ servername }}" # You don't need to change this line
 win_user: Administrator # User name placed in ec2-instance user data.
