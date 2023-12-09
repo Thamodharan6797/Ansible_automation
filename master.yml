@@ -3,6 +3,7 @@
   hosts: all
   tasks:
     - name: test connection
-      ansible.builtin.ping:
+      debug:
+        msg: "testing"
 
 ...
