@@ -1,6 +1,7 @@
 ---
 - name: ping module demo
   hosts: all
+  gather_facts: no
   tasks:
     - name: test connection
       debug:
