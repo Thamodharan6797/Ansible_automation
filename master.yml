@@ -1,5 +1,5 @@
 ---
-- name: ping module demo
+- name: ping module demo1
   hosts: all
   gather_facts: no
   tasks:
